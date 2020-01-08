@@ -49,6 +49,6 @@ public enum ConfigReader {
   }
 
   public static int getKey() {
-    return Integer.valueOf(Config.prop.getProperty("key", "0x0E45"));
+    return Integer.decode(Config.prop.getProperty("key", "0x0E45"));
   }
 }
